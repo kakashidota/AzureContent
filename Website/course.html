@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Detail - Kakashi Learning Hub</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Kakashi Learning Hub</h1>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#courses" class="active">Courses</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                </ul>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="course-detail">
+            <div class="course-header">
+                <div class="course-thumbnail">
+                    <img src="assets/default-course.jpg" alt="Course Thumbnail">
+                </div>
+                <div class="course-info">
+                    <h1 class="course-detail-title">Course Title</h1>
+                    <p class="course-detail-description">Course description will be loaded here.</p>
+                    <div class="course-meta">
+                        <div class="course-stats">
+                            <span><i class="fas fa-book"></i> <span id="lesson-count">0</span> lessons</span>
+                            <span><i class="fas fa-clock"></i> <span id="duration">0h 0m</span></span>
+                            <span><i class="fas fa-signal"></i> <span id="level">Intermediate</span></span>
+                        </div>
+                        <div class="course-actions">
+                            <a href="#" class="btn-primary course-playlist" target="_blank">
+                                <i class="fab fa-youtube"></i> Watch on YouTube
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course-tabs">
+                <div class="tabs-nav">
+                    <div class="tab-link active" data-target="#tab-content">Content</div>
+                    <div class="tab-link" data-target="#tab-quiz">Quizzes</div>
+                    <div class="tab-link" data-target="#tab-resources">Resources</div>
+                </div>
+                <div class="tab-content">
+                    <div id="tab-content" class="tab-pane active">
+                        <h3>Course Content</h3>
+                        <div class="lesson-list">
+                            <!-- Lessons will be populated here -->
+                            <div class="lesson-item placeholder">
+                                <p>Loading course content...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-quiz" class="tab-pane">
+                        <h3>Knowledge Check</h3>
+                        <p>Test your understanding of the course material with these quiz questions:</p>
+                        <div class="quiz-container">
+                            <div class="quiz-content">
+                                <!-- Quiz content will be loaded here -->
+                                <p class="placeholder">Loading quiz questions...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-resources" class="tab-pane">
+                        <h3>Additional Resources</h3>
+                        <ul class="resources-list">
+                            <li>
+                                <i class="fas fa-link"></i>
+                                <a href="https://docs.microsoft.com/en-us/azure/" target="_blank">Microsoft Azure Documentation</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-link"></i>
+                                <a href="https://docs.microsoft.com/en-us/azure/devops/" target="_blank">Azure DevOps Documentation</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-link"></i>
+                                <a href="https://docs.microsoft.com/en-us/dotnet/" target="_blank">.NET Documentation</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-file-pdf"></i>
+                                <a href="#" class="disabled">Course PDF Guide (Coming Soon)</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3>Kakashi Learning Hub</h3>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#courses">Courses</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.youtube.com/@KakashiDota" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Kakashi Learning Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/courses.js"></script>
+</body>
+</html> 
