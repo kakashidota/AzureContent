@@ -218,8 +218,8 @@ function generateCourseCards() {
         
         courseCard.innerHTML = `
             <div class="course-image">
-                <img src="${course.thumbnail}" alt="${course.title}" onerror="this.src='assets/default-course.jpg'">
-            </div>
+                <img src="${course.thumbnail}" alt="${course.title}" onerror="this.onerror=null; this.src='assets/default-course.jpg';">
+            </div>      
             <div class="course-content">
                 <h3 class="course-title">${course.title}</h3>
                 <span class="course-category">${getCategoryName(course.category)}</span>
