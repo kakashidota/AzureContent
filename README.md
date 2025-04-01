@@ -33,7 +33,8 @@ We are committed to fostering an open and welcoming environment. Harassment of p
 
 ---
 
-# 👥 Contributors ✨
+*Thank you for contributing to Azure Open Source! Your efforts help build a stronger cloud community for everyone.*
+## Contributors ✨
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
@@ -207,12 +208,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-*Thank you for contributing to Azure Open Source! Your efforts help build a stronger cloud community for everyone.*
 
-
-## Contributors ✨
-
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 
 
