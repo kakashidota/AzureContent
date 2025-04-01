@@ -42,15 +42,19 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
 <table>
-  <tbody>
-    <tr>
-      <td align="center" valign="top" width="14.28%"><a href="https://www.youtube.com/@KakashiDota"><img src="https://avatars.githubusercontent.com/u/20668121?v=4?s=100" width="100px;" alt="Robin Kamo"/><br /><sub><b>Robin Kamo</b></sub></a><br /><a href="https://github.com/kakashidota/AzureContent/commits?author=kakashidota" title="Code">💻</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/DersimAbbas"><img src="https://avatars.githubusercontent.com/u/155909563?v=4?s=100" width="100px;" alt="Dersim Abbas"/><br /><sub><b>Dersim Abbas</b></sub></a><br /><a href="https://github.com/kakashidota/AzureContent/commits?author=DersimAbbas" title="Code">💻</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/neurothrone"><img src="https://avatars.githubusercontent.com/u/54468049?v=4?s=100" width="100px;" alt="Zane Neurothrone"/><br /><sub><b>Zane Neurothrone</b></sub></a><br /><a href="https://github.com/kakashidota/AzureContent/commits?author=neurothrone" title="Code">💻</a></td>
-    </tr>
-  </tbody>
+  <tr>
+    <td align="center"><a href="https://www.youtube.com/@KakashiDota"><img src="https://avatars.githubusercontent.com/u/20668121?v=4?s=100" width="100px;" alt="Robin Kamo"/><br /><sub><b>Robin Kamo</b></sub></a><br /><a href="https://github.com/kakashidota/AzureContent/commits?author=kakashidota" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/DersimAbbas"><img src="https://avatars.githubusercontent.com/u/155909563?v=4?s=100" width="100px;" alt="Dersim Abbas"/><br /><sub><b>Dersim Abbas</b></sub></a><br /><a href="https://github.com/kakashidota/AzureContent/commits?author=DersimAbbas" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/neurothrone"><img src="https://avatars.githubusercontent.com/u/54468049?v=4?s=100" width="100px;" alt="Zane Neurothrone"/><br /><sub><b>Zane Neurothrone</b></sub></a><br /><a href="https://github.com/kakashidota/AzureContent/commits?author=neurothrone" title="Code">💻</a></td>
+  </tr>
 </table>
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
 
 <!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->
