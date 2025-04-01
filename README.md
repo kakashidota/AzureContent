@@ -7,7 +7,7 @@
 
 Thank you for your interest in contributing to Azure Open Source! This document provides guidelines and instructions for contributing to our projects. By participating, you're helping us create better tools and resources for the Azure community.
 
-## ⭐ Star This Repository!
+## ⭐ Star This Repository!!
 
 If you find this project helpful, please consider giving it a star ⭐ and sharing it to help more learners discover Azure.
 
