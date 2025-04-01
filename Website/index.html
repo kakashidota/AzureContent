@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kakashi Learning Hub</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Kakashi Learning Hub</h1>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Learn DevOps & Tech Skills</h1>
+                <h2>with <span class="highlight">Kakashi</span></h2>
+                <p>Senior DevOps Engineer specializing in Azure, .NET, RPA, Cybersecurity, and Full-Stack Development</p>
+                <a href="#courses" class="btn-primary">Explore Courses</a>
+            </div>
+        </section>
+
+        <section id="courses" class="courses-section">
+            <h2>Courses</h2>
+            <div class="course-filter">
+                <select id="course-category">
+                    <option value="all">All Categories</option>
+                    <option value="devops">DevOps</option>
+                    <option value="azure">Azure</option>
+                    <option value="dotnet">.NET</option>
+                    <option value="rpa">RPA</option>
+                    <option value="security">Cybersecurity</option>
+                </select>
+            </div>
+            <div class="courses-container">
+                <!-- Course cards will be dynamically loaded here -->
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2>About Kakashi</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="assets/profile-placeholder.png" alt="Kakashi">
+                </div>
+                <div class="about-text">
+                    <p>Senior DevOps Engineer with extensive experience in Azure, .NET, RPA, Cybersecurity, and Full-Stack Development.</p>
+                    <p>This learning platform provides educational content based on my YouTube channel, offering structured courses and interactive lessons to help you advance your tech career.</p>
+                    <div class="social-links">
+                        <a href="https://www.youtube.com/@KakashiDota" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3>Kakashi Learning Hub</h3>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.youtube.com/@KakashiDota" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Kakashi Learning Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/courses.js"></script>
+</body>
+</html> 
