@@ -38,10 +38,23 @@ We are committed to fostering an open and welcoming environment. Harassment of p
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- CONTRIBUTORS START -->
-| ![@DersimAbbas](https://github.com/dersimabbas.png?size=100) | ![@Neurothrone](https://github.com/neurothrone.png?size=100) | ![@kakashidota](https://github.com/kakashidota.png?size=100) |
-|:---:|:---:|:---:|
-| [**DersimAbbas**](https://github.com/dersimabbas) | [**Neurothrone**](https://github.com/example-user2) | [**Kakashidota**](https://github.com/example-user3) |
-| 💻 Code, 📖 Documentation | 💻 Code, 🤔 Ideas | 👀 Reviews, 💬 Questions |
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://www.youtube.com/@KakashiDota"><img src="https://avatars.githubusercontent.com/u/20668121?v=4?s=100" width="100px;" alt="Robin Kamo"/><br /><sub><b>Robin Kamo</b></sub></a><br /><a href="https://github.com/kakashidota/AzureContent/commits?author=kakashidota" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/DersimAbbas"><img src="https://avatars.githubusercontent.com/u/155909563?v=4?s=100" width="100px;" alt="Dersim Abbas"/><br /><sub><b>Dersim Abbas</b></sub></a><br /><a href="https://github.com/kakashidota/AzureContent/commits?author=DersimAbbas" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/neurothrone"><img src="https://avatars.githubusercontent.com/u/54468049?v=4?s=100" width="100px;" alt="Zane Neurothrone"/><br /><sub><b>Zane Neurothrone</b></sub></a><br /><a href="https://github.com/kakashidota/AzureContent/commits?author=neurothrone" title="Code">💻</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
 <!-- CONTRIBUTORS END -->
 
 ## Contribution Types
@@ -201,22 +214,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tbody>
-    <tr>
-      <td align="center" valign="top" width="14.28%"><a href="https://www.youtube.com/@KakashiDota"><img src="https://avatars.githubusercontent.com/u/20668121?v=4?s=100" width="100px;" alt="Robin Kamo"/><br /><sub><b>Robin Kamo</b></sub></a><br /><a href="https://github.com/kakashidota/AzureContent/commits?author=kakashidota" title="Code">💻</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/DersimAbbas"><img src="https://avatars.githubusercontent.com/u/155909563?v=4?s=100" width="100px;" alt="Dersim Abbas"/><br /><sub><b>Dersim Abbas</b></sub></a><br /><a href="https://github.com/kakashidota/AzureContent/commits?author=DersimAbbas" title="Code">💻</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/neurothrone"><img src="https://avatars.githubusercontent.com/u/54468049?v=4?s=100" width="100px;" alt="Zane Neurothrone"/><br /><sub><b>Zane Neurothrone</b></sub></a><br /><a href="https://github.com/kakashidota/AzureContent/commits?author=neurothrone" title="Code">💻</a></td>
-    </tr>
-  </tbody>
-</table>
 
-<!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
