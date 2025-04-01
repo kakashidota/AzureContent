@@ -30,6 +30,37 @@ We are committed to fostering an open and welcoming environment. Harassment of p
 
 ---
 
+# 👥 Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- CONTRIBUTORS START -->
+| ![@DersimAbbas](https://github.com/dersimabbas.png?size=100) | ![@Neurothrone](https://github.com/neurothrone.png?size=100) | ![@kakashidota](https://github.com/kakashidota.png?size=100) |
+|:---:|:---:|:---:|
+| [**DersimAbbas**](https://github.com/dersimabbas) | [**Neurothrone**](https://github.com/example-user2) | [**Kakashidota**](https://github.com/example-user3) |
+| 💻 Code, 📖 Documentation | 💻 Code, 🤔 Ideas | 👀 Reviews, 💬 Questions |
+<!-- CONTRIBUTORS END -->
+
+## Contribution Types
+
+- 💻 = Code
+- 📖 = Documentation
+- 🐛 = Bug reports
+- 🤔 = Ideas & Planning
+- 👀 = Code Reviews
+- 🧪 = Tests
+- 🎨 = Design & UI
+- 💬 = Answering Questions
+- 🚧 = Maintenance
+
+## How to Add Yourself as a Contributor
+
+Comment on issues or pull requests with:
+
+```
+@all-contributors please add @username for code, doc, etc.
+```
+
 ## 🚦 Getting Started
 
 ### Prerequisites
