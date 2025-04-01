@@ -1,7 +1,5 @@
 # 🚀 Contributing to Azure Open Source
 
-![Azure Banner](https://raw.githubusercontent.com/microsoft/azureml-examples/main/media/logo.svg)
-
 > **"Let's build the future of cloud education — together! 🌐"**
 
 Thank you for your interest in contributing to Azure Open Source! This document provides guidelines and instructions for contributing to our projects. By participating, you're helping us create better tools and resources for the Azure community.
@@ -148,11 +146,11 @@ We value all contributions and recognize contributors in several ways:
 
 ---
 
-## 📬 Connect With Us
+## 📬 Connect With 
 
-- 🔗 [LinkedIn](https://linkedin.com/company/microsoft)
-- 📧 [Email](mailto:azurecontrib@example.com)
-- 🌐 [Azure Community](https://techcommunity.microsoft.com/t5/azure/ct-p/Azure)
+- 🔗 [LinkedIn](https://www.linkedin.com/in/robin-kamo-b647ab151/)
+- 📧 [Email](robin.kamo@nionit.com)
+- 🌐 [Discord Community](https://discord.gg/g7HtjEX2F2)
 
 ---
 
@@ -164,4 +162,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 *Thank you for contributing to Azure Open Source! Your efforts help build a stronger cloud community for everyone.*
 
-![Azure Footer](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg)
