@@ -13,18 +13,6 @@ In this exercise, you’ll create a simple **Azure Function** that fetches data 
 
 ---
 
-### 🛠 Prerequisites
-
-Make sure you have:
-
-- Your Minimal API deployed to Azure App Service  
-- [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download)
-- [Azure Functions Core Tools](https://learn.microsoft.com/en-us/azure/azure-functions/functions-run-local)
-- Visual Studio Code with Azure Functions and C# extensions
-- Azure CLI + signed in (`az login`)
-
----
-
 ### 📁 Folder Structure
 
 ```bash
