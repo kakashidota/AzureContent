@@ -11,6 +11,8 @@ In this hands-on exercise, you'll build a Minimal API using **.NET 8** that perf
 - Create simple, readable CRUD endpoints
 - Prepare your API for deployment to Azure in the next step
 
+📺 **Watch the full tutorial on YouTube:**  
+[▶️ Minimal API in 20 Minutes - Fast & Simple .NET 8 Web API](https://youtu.be/IifiV_U5toI)
 ---
 
 ### 📁 Folder Structure
