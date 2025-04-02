@@ -13,17 +13,6 @@ In this hands-on exercise, you'll build a Minimal API using **.NET 8** that perf
 
 ---
 
-### 🛠 Prerequisites
-
-Make sure you have the following installed:
-
-- [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download)
-- [Visual Studio Code](https://code.visualstudio.com/)
-- C# extension for VS Code
-- REST client like [Thunder Client](https://www.thunderclient.com/) or Postman
-
----
-
 ### 📁 Folder Structure
 
 ```bash
