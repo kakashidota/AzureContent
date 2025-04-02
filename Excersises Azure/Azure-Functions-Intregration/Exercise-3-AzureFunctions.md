@@ -29,11 +29,25 @@ PokeDexFunctions/
 
 #### 1. Create the Azure Functions App
 
+**Option A – CLI (for VS Code users):**
+
 ```bash
 func init PokeDexFunctions --worker-runtime dotnet --target-framework net8.0
 cd PokeDexFunctions
 func new --name Function1 --template "HTTP trigger" --authlevel "Anonymous"
 ```
+
+**OR**
+
+**Option B – Visual Studio Project Explorer:**
+
+1. Open Visual Studio (latest version).
+2. Select **Create a new project**.
+3. Search for and choose **Azure Functions**.
+4. Name the project `PokeDexFunctions`.
+5. Choose **HTTP trigger**, set Authorization level to **Anonymous**.
+6. Choose **.NET 8 (Isolated Process)** as the target framework.
+7. Once the project is created, rename the generated function to `Function1` (if needed).
 
 ---
 
