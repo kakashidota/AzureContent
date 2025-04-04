@@ -33,4 +33,8 @@ Because time is precious and automation is your new sidekick. Logic Apps let you
 and that's as close to wizardry as it gets in the cloud.
 
 ---
-Next up: [Nano Mission – Monday Reminder Transmission](02-nano-missions.md)
+
+Next up:
+
+- [Logic Apps – Micro Walkthrough: What are Logic Apps](https://youtu.be/o-6esql_HeA)
+- [Logic Apps - Nano Missions](02-nano-missions-logic-apps)
