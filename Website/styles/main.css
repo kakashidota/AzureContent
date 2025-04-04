@@ -2,6 +2,7 @@
 
 /* Variables for consistent theming */
 :root {
+    /* Light theme (default) */
     --primary-color: #0078d7; /* Azure blue */
     --secondary-color: #2b5797; /* Darker blue */
     --accent-color: #00b294; /* Teal accent */
@@ -12,10 +13,33 @@
     --warning-color: #ffb900; /* Amber warning */
     --danger-color: #e81123; /* Red error */
     --code-bg: #282c34; /* VS Code-like background */
+    --bg-color: white; /* Background color */
+    --card-bg: white; /* Card background */
+    --border-color: #ddd; /* Border color */
+    --shadow-color: rgba(0, 0, 0, 0.1); /* Shadow color */
+    
     --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     --transition: all 0.3s ease;
-    --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --shadow: 0 5px 15px var(--shadow-color);
     --border-radius: 5px;
+}
+
+/* Dark theme variables */
+.dark-mode {
+    --primary-color: #4aa5e8; /* Lighter Azure blue */
+    --secondary-color: #6e98d3; /* Lighter blue */
+    --accent-color: #06d7b3; /* Brighter teal */
+    --dark-color: #121212; /* Darker black */
+    --light-color: #1e1e1e; /* Dark gray */
+    --text-color: #e0e0e0; /* Light gray for text */
+    --success-color: #27ae60; /* Brighter green */
+    --warning-color: #f39c12; /* Brighter amber */
+    --danger-color: #e74c3c; /* Brighter red */
+    --code-bg: #1a1a1a; /* Darker code background */
+    --bg-color: #121212; /* Dark background */
+    --card-bg: #1e1e1e; /* Dark card background */
+    --border-color: #333; /* Dark border color */
+    --shadow-color: rgba(0, 0, 0, 0.4); /* Darker shadow */
 }
 
 /* Reset and base styles */
@@ -30,6 +54,7 @@ body {
     color: var(--text-color);
     line-height: 1.6;
     background-color: var(--light-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -93,12 +118,13 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: white;
+    background-color: var(--bg-color);
     padding: 1rem 2rem;
     box-shadow: var(--shadow);
     position: sticky;
     top: 0;
     z-index: 100;
+    transition: background-color 0.3s ease;
 }
 
 .logo h1 {
@@ -201,15 +227,26 @@ ul {
 
 .course-filter select {
     padding: 0.7rem 1.5rem;
-    border: 1px solid #ddd;
+    border: 1px solid var(--border-color);
     border-radius: var(--border-radius);
-    background-color: white;
+    background-color: var(--bg-color);
     font-family: var(--font-primary);
     font-size: 1rem;
     color: var(--text-color);
     cursor: pointer;
     outline: none;
     width: 250px;
+    transition: var(--transition);
+}
+
+.course-filter select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(0, 120, 215, 0.1);
+}
+
+.course-filter select option {
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 
 .courses-container {
@@ -221,7 +258,7 @@ ul {
 }
 
 .course-card {
-    background-color: white;
+    background-color: var(--card-bg);
     border-radius: var(--border-radius);
     overflow: hidden;
     box-shadow: var(--shadow);
@@ -316,7 +353,8 @@ ul {
 /* About Section */
 .about-section {
     padding: 4rem 2rem;
-    background-color: white;
+    background-color: var(--bg-color);
+    transition: var(--transition);
 }
 
 .about-section h2 {
@@ -386,6 +424,7 @@ footer {
     background-color: var(--dark-color);
     color: white;
     padding: 3rem 2rem 1rem;
+    transition: var(--transition);
 }
 
 .footer-content {
@@ -512,7 +551,7 @@ footer {
     align-items: center;
     gap: 1rem;
     padding: 1rem;
-    background-color: white;
+    background-color: var(--card-bg);
     border-radius: var(--border-radius);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
     transition: var(--transition);
@@ -532,6 +571,11 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: var(--transition);
+}
+
+.lesson-icon.completed {
+    background-color: var(--success-color);
 }
 
 .lesson-title {
@@ -543,12 +587,40 @@ footer {
     font-size: 0.9rem;
 }
 
+.btn-complete-lesson {
+    background: none;
+    border: none;
+    color: #aaa;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-left: 0.5rem;
+}
+
+.btn-complete-lesson:hover {
+    color: var(--success-color);
+    transform: scale(1.1);
+}
+
+.btn-complete-lesson.completed {
+    color: var(--success-color);
+}
+
+.course-progress-display {
+    margin-top: 1rem;
+}
+
 /* Quiz styling */
 .quiz-container {
     max-width: 800px;
     margin: 0 auto;
     padding: 2rem;
-    background-color: white;
+    background-color: var(--card-bg);
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
 }
@@ -565,25 +637,29 @@ footer {
 }
 
 .quiz-option {
-    padding: 1rem;
-    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    border: 2px solid #e0e0e0;
     border-radius: var(--border-radius);
     cursor: pointer;
     transition: var(--transition);
 }
 
 .quiz-option:hover {
-    background-color: rgba(0, 120, 215, 0.05);
-    border-color: var(--primary-color);
+    background-color: #f0f0f0;
+    border-color: #d0d0d0;
 }
 
 .quiz-option.selected {
-    background-color: rgba(0, 120, 215, 0.1);
+    background-color: #e3f2fd;
     border-color: var(--primary-color);
 }
 
 .quiz-option.correct {
-    background-color: rgba(16, 124, 16, 0.1);
+    background-color: rgba(16, 124, 16, 0.2);
     border-color: var(--success-color);
 }
 
@@ -592,20 +668,44 @@ footer {
     border-color: var(--danger-color);
 }
 
+.quiz-option-marker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    border: 1px solid #d0d0d0;
+    border-radius: 50%;
+    margin-right: 12px;
+    font-weight: bold;
+}
+
+.quiz-option-text {
+    flex: 1;
+    text-align: left;
+}
+
+.quiz-submit {
+    margin-top: 20px;
+    padding: 10px 20px;
+}
+
 .quiz-feedback {
-    padding: 1rem;
+    margin-top: 20px;
+    padding: 15px;
     border-radius: var(--border-radius);
-    margin-bottom: 1.5rem;
+    text-align: center;
 }
 
 .quiz-feedback.correct {
     background-color: rgba(16, 124, 16, 0.1);
-    color: var(--success-color);
+    border: 1px solid var(--success-color);
 }
 
 .quiz-feedback.incorrect {
     background-color: rgba(232, 17, 35, 0.1);
-    color: var(--danger-color);
+    border: 1px solid var(--danger-color);
 }
 
 .quiz-navigation {
@@ -621,12 +721,13 @@ footer {
         top: 70px;
         gap: 0;
         flex-direction: column;
-        background-color: white;
+        background-color: var(--bg-color);
         width: 100%;
         text-align: center;
         transition: 0.3s;
-        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 10px 15px var(--shadow-color);
         padding: 1rem 0;
+        z-index: 99;
     }
 
     .nav-links.active {
@@ -678,4 +779,240 @@ footer {
         text-align: center;
         padding: 0.75rem;
     }
+}
+
+/* Add styles for video modal */
+.video-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    overflow: auto;
+}
+
+.video-modal-content {
+    position: relative;
+    background-color: var(--card-bg);
+    margin: 5% auto;
+    width: 80%;
+    max-width: 850px;
+    box-shadow: var(--shadow);
+    border-radius: var(--border-radius);
+    animation: modalFadeIn 0.3s ease;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.video-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.video-title {
+    margin: 0;
+    font-size: 1.3rem;
+    color: var(--primary-color);
+}
+
+.close-video {
+    font-size: 1.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: #aaa;
+    transition: var(--transition);
+}
+
+.close-video:hover {
+    color: var(--danger-color);
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.lesson-item-video {
+    margin-top: 10px;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+}
+
+.lesson-item-video.open {
+    height: auto;
+    min-height: 250px;
+}
+
+/* Theme toggle button */
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: var(--transition);
+    margin-left: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.theme-toggle:hover {
+    background-color: rgba(0, 120, 215, 0.1);
+    transform: translateY(-2px);
+}
+
+.theme-toggle i {
+    font-size: 1.2rem;
+    transition: var(--transition);
+}
+
+.dark-mode .course-card,
+.dark-mode .lesson-item,
+.dark-mode .quiz-container,
+.dark-mode .video-modal-content,
+.dark-mode .tab-content {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+}
+
+.dark-mode .quiz-option {
+    background-color: #2a2a2a;
+    border-color: #444;
+}
+
+.dark-mode .quiz-option:hover {
+    background-color: #333;
+}
+
+.dark-mode .quiz-option-marker {
+    background-color: #444;
+    color: var(--text-color);
+}
+
+.dark-mode .tab-link {
+    color: var(--text-color);
+}
+
+.dark-mode .tab-link.active {
+    color: var(--primary-color);
+}
+
+.dark-mode .course-category {
+    background-color: rgba(74, 165, 232, 0.2);
+}
+
+.dark-mode .course-description,
+.dark-mode .lesson-duration {
+    color: #aaa;
+}
+
+.dark-mode .course-stats {
+    color: #aaa;
+}
+
+/* Additional dark mode styles for form elements */
+.dark-mode select,
+.dark-mode input,
+.dark-mode textarea {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    border-color: var(--border-color);
+}
+
+.dark-mode select option {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+}
+
+.dark-mode .course-filter select:focus {
+    box-shadow: 0 0 0 2px rgba(74, 165, 232, 0.2);
+}
+
+.dark-mode .tabs-nav {
+    border-bottom-color: var(--border-color);
+}
+
+.dark-mode .video-modal-header {
+    border-bottom-color: var(--border-color);
+}
+
+/* Add dark mode footer styles */
+.dark-mode footer {
+    background-color: #0c0c0c; /* Even darker background for footer in dark mode */
+    color: #e0e0e0;
+}
+
+.dark-mode .footer-links a {
+    color: #aaa;
+}
+
+.dark-mode .footer-links a:hover {
+    color: var(--primary-color);
+}
+
+.dark-mode .footer-social a {
+    color: #aaa;
+}
+
+.dark-mode .footer-social a:hover {
+    color: var(--primary-color);
+}
+
+.dark-mode .footer-bottom {
+    color: #777;
+    border-top-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Add additional dark mode styles */
+.dark-mode .about-section {
+    background-color: var(--light-color);
+}
+
+.dark-mode .about-section h2,
+.dark-mode .courses-section h2 {
+    color: var(--primary-color);
+}
+
+.dark-mode .resources-list a {
+    color: var(--primary-color);
+}
+
+.dark-mode .resources-list a:hover {
+    color: var(--accent-color);
+}
+
+.dark-mode .resources-list a.disabled {
+    color: #666;
 } 

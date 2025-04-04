@@ -20,6 +20,9 @@
                     <li><a href="index.html#about">About</a></li>
                 </ul>
             </div>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                <i class="fas fa-sun"></i>
+            </button>
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -44,9 +47,12 @@
                             <span><i class="fas fa-signal"></i> <span id="level">Intermediate</span></span>
                         </div>
                         <div class="course-actions">
-                            <a href="#" class="btn-primary course-playlist" target="_blank">
+                            <button class="btn-primary course-playlist">
                                 <i class="fab fa-youtube"></i> Watch on YouTube
-                            </a>
+                            </button>
+                        </div>
+                        <div class="course-progress-display">
+                            <!-- Course progress will be displayed here -->
                         </div>
                     </div>
                 </div>
@@ -104,6 +110,19 @@
         </section>
     </main>
 
+    <!-- Video Modal Container -->
+    <div id="video-modal" class="video-modal">
+        <div class="video-modal-content">
+            <div class="video-modal-header">
+                <h3 class="video-title">Video Title</h3>
+                <span class="close-video">&times;</span>
+            </div>
+            <div class="video-container">
+                <iframe id="youtube-embed" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
     <footer>
         <div class="footer-content">
             <div class="footer-logo">
@@ -118,8 +137,8 @@
             </div>
             <div class="footer-social">
                 <a href="https://www.youtube.com/@KakashiDota" target="_blank"><i class="fab fa-youtube"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/kakashidota" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/kakashidota/" target="_blank"><i class="fab fa-linkedin"></i></a>
             </div>
         </div>
         <div class="footer-bottom">
@@ -128,6 +147,10 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/quiz.js"></script>
+    <script src="js/courseDetail.js"></script>
     <script src="js/courses.js"></script>
+    <script src="js/theme.js"></script>
 </body>
 </html> 
