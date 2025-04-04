@@ -27,7 +27,3 @@ You now have:
 
 You're now cleared for launch. Time to build something awesome — or at least open the portal and pretend you know what
 you're doing.
-
----
-
-Next up: [Cloud Bit – What is Azure](01-cloud-bit-what-is-azure.md)

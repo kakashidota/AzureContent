@@ -32,4 +32,4 @@ It's like having a futuristic toolkit that you don't have to build yourself. Nea
 Next up:
 
 - [Nano Mission – Create Free Account](02-nano-mission-create-free-account.md)
-- [Micro Walkthrough - Portal Tour](https://www.youtube.com/watch?v=example)
+- [Micro Walkthrough - Portal Recon](https://youtu.be/o-6esql_HeA)
