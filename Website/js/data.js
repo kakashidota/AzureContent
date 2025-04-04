@@ -1,4 +1,4 @@
-// Courses data and functionality for Kakashi Learning Hub
+// Course and quiz data for Kakashi Learning Hub
 
 // YouTube playlists data (mapped as courses)
 const coursesData = [
@@ -40,7 +40,7 @@ const coursesData = [
         lessons: 12,
         duration: '8h 30m',
         level: 'Beginner',
-        playlistUrl: 'https://www.youtube.com/playlist?list=PLD7svyKaquTkKPUFQd0iGZVQ5NeQWwx4g',
+        playlistUrl: 'https://www.youtube.com/watch?v=gw_5KNpZMCk&list=PLQ10yv3WDdnbDyz3QF4LlZFrxzXFt5cNa',
         videos: [
             {
                 title: 'Azure Fundamentals part 1 | AZ-900 certification',
@@ -69,7 +69,7 @@ const coursesData = [
         lessons: 20,
         duration: '15h 20m',
         level: 'Intermediate',
-        playlistUrl: 'https://www.youtube.com/playlist?list=PLD7svyKaquTkpN5FwgYACj0HvlSWMyEWh',
+        playlistUrl: 'https://www.youtube.com/watch?v=5LEfQ04gjo0&list=PLQ10yv3WDdnYxsbav5mc9Wp8LF_l2jsfJ',
         videos: [
             {
                 title: 'UiPath tutorial | How to create a new queue item in Orchestrator',
@@ -203,48 +203,6 @@ const quizData = {
     // More quizzes for other courses
 };
 
-// Function to generate course cards
-function generateCourseCards() {
-    const coursesContainer = document.querySelector('.courses-container');
-    
-    if (!coursesContainer) return;
-    
-    coursesContainer.innerHTML = '';
-    
-    coursesData.forEach(course => {
-        const courseCard = document.createElement('div');
-        courseCard.classList.add('course-card');
-        courseCard.dataset.category = course.category;
-        
-        courseCard.innerHTML = `
-            <div class="course-image">
-                <img src="${course.thumbnail}" alt="${course.title}" onerror="this.onerror=null; this.src='assets/default-course.jpg';">
-            </div>      
-            <div class="course-content">
-                <h3 class="course-title">${course.title}</h3>
-                <span class="course-category">${getCategoryName(course.category)}</span>
-                <p class="course-description">${course.description}</p>
-                <div class="course-stats">
-                    <span>${course.lessons} lessons</span>
-                    <span>${course.duration}</span>
-                    <span>${course.level}</span>
-                </div>
-                <div class="course-action">
-                    <div class="course-progress">
-                        <span>0%</span>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 0%"></div>
-                        </div>
-                    </div>
-                    <a href="course.html?id=${course.id}" class="btn-primary">Start Learning</a>
-                </div>
-            </div>
-        `;
-        
-        coursesContainer.appendChild(courseCard);
-    });
-}
-
 // Helper function to get category display name
 function getCategoryName(categoryId) {
     const categories = {
@@ -258,121 +216,58 @@ function getCategoryName(categoryId) {
     return categories[categoryId] || categoryId;
 }
 
-// Initialize courses
-document.addEventListener('DOMContentLoaded', function() {
-    generateCourseCards();
+// Progress tracking functions
+function saveUserProgress(courseId, videoId, completed) {
+    // Get existing progress from localStorage
+    let progress = getUserProgress();
     
-    // Additional initialization for course details page
-    if (window.location.pathname.includes('course.html')) {
-        const urlParams = new URLSearchParams(window.location.search);
-        const courseId = urlParams.get('id');
-        
-        if (courseId) {
-            loadCourseDetails(courseId);
+    // Initialize course progress if it doesn't exist
+    if (!progress[courseId]) {
+        progress[courseId] = {
+            completedVideos: []
+        };
+    }
+    
+    // Add or remove video from completed list
+    if (completed) {
+        // Only add if not already in the list
+        if (!progress[courseId].completedVideos.includes(videoId)) {
+            progress[courseId].completedVideos.push(videoId);
         }
-    }
-});
-
-// Function to load course details
-function loadCourseDetails(courseId) {
-    const course = coursesData.find(c => c.id === courseId);
-    
-    if (!course) {
-        console.error('Course not found');
-        return;
+    } else {
+        // Remove from completed list
+        progress[courseId].completedVideos = progress[courseId].completedVideos.filter(id => id !== videoId);
     }
     
-    // Set page title
-    document.title = `${course.title} - Kakashi Learning Hub`;
+    // Save to localStorage
+    localStorage.setItem('kakashiLearningHubProgress', JSON.stringify(progress));
     
-    // Update header content
-    const courseTitle = document.querySelector('.course-detail-title');
-    const courseDescription = document.querySelector('.course-detail-description');
-    const courseThumbnail = document.querySelector('.course-thumbnail img');
-    
-    if (courseTitle) courseTitle.textContent = course.title;
-    if (courseDescription) courseDescription.textContent = course.description;
-    if (courseThumbnail) {
-        courseThumbnail.src = course.thumbnail;
-        courseThumbnail.onerror = () => { courseThumbnail.src = 'assets/default-course.jpg'; };
-    }
-    
-    // Generate lesson list
-    const lessonList = document.querySelector('.lesson-list');
-    
-    if (lessonList && course.videos) {
-        lessonList.innerHTML = '';
-        
-        course.videos.forEach((video, index) => {
-            const lessonItem = document.createElement('div');
-            lessonItem.classList.add('lesson-item');
-            
-            lessonItem.innerHTML = `
-                <div class="lesson-icon">
-                    <i class="fas fa-play"></i>
-                </div>
-                <div class="lesson-title">
-                    <h4>${video.title}</h4>
-                </div>
-                <div class="lesson-duration">${video.duration}</div>
-                <a href="${video.url}" target="_blank" class="btn-primary">Watch</a>
-            `;
-            
-            lessonList.appendChild(lessonItem);
-        });
-    }
-    
-    // Load quiz for the course if available
-    const quizContainer = document.querySelector('.quiz-content');
-    
-    if (quizContainer && quizData[courseId]) {
-        loadQuiz(quizContainer, quizData[courseId]);
-    }
+    // Return updated progress
+    return progress;
 }
 
-// Function to load quiz
-function loadQuiz(container, questions) {
-    container.innerHTML = '';
-    
-    questions.forEach((question, index) => {
-        const questionElement = document.createElement('div');
-        questionElement.classList.add('quiz-question');
-        
-        let optionsHTML = '';
-        question.options.forEach((option, optIndex) => {
-            optionsHTML += `
-                <div class="quiz-option" data-correct="${option.correct}">
-                    <span class="quiz-option-marker">${String.fromCharCode(65 + optIndex)}</span>
-                    <span class="quiz-option-text">${option.text}</span>
-                </div>
-            `;
-        });
-        
-        questionElement.innerHTML = `
-            <h4>Question ${index + 1}: ${question.question}</h4>
-            <div class="quiz-options">
-                ${optionsHTML}
-            </div>
-        `;
-        
-        container.appendChild(questionElement);
-    });
-    
-    // Add submit button
-    const submitBtn = document.createElement('button');
-    submitBtn.classList.add('btn-primary', 'quiz-submit');
-    submitBtn.textContent = 'Submit Answers';
-    container.appendChild(submitBtn);
-    
-    // Add feedback container (hidden initially)
-    const feedbackContainer = document.createElement('div');
-    feedbackContainer.classList.add('quiz-feedback');
-    feedbackContainer.style.display = 'none';
-    feedbackContainer.innerHTML = '<p>Check your answers above to see what you got right and wrong!</p>';
-    container.appendChild(feedbackContainer);
-} 
-// Main courses file for Kakashi Learning Hub
-// Acts as an entry point for all course related functionality
+function getUserProgress() {
+    // Get progress from localStorage or create new object
+    const progressData = localStorage.getItem('kakashiLearningHubProgress');
+    return progressData ? JSON.parse(progressData) : {};
+}
 
-// No additional code needed here as each module handles its own functionality
-// and is included in the HTML files directly 
+function getCourseProgress(courseId) {
+    const progress = getUserProgress();
+    
+    // If no progress for this course, return 0
+    if (!progress[courseId] || !progress[courseId].completedVideos) {
+        return 0;
+    }
+    
+    // Find course to get total number of videos
+    const course = coursesData.find(c => c.id === courseId);
+    if (!course || !course.videos || course.videos.length === 0) {
+        return 0;
+    }
+    
+    // Calculate percentage
+    const completedCount = progress[courseId].completedVideos.length;
+    const totalVideos = course.videos.length;
+    return Math.round((completedCount / totalVideos) * 100);
+} 
