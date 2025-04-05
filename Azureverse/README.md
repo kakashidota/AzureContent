@@ -2,10 +2,10 @@
 
 You're about to explore a galaxy of quick, focused learning experiences:
 
-- **Nano Missions** – hands-on mini tasks with purpose
-- **Cloud Bits** – concept explainers in plain English
-- **Micro Walkthroughs** – short videos when you need them
+- **Briefings** – Concept explainers, either written or on video. Think of them as your pre-mission pep talk.
+- **Missions** – Hands-on tasks to complete. One objective. One operation. Zero drama. Maximum clarity.
+- **Incursions** – Bigger builds. Multiple services. Maximum snacks recommended.
 
-No fluff. No hypersleep. Just clear missions to upgrade your Azure skills.
+No fluff. No hypersleep. Just tactical content designed to level up your Azure skills—one deploy at a time.
 
 **Ready to explore?**

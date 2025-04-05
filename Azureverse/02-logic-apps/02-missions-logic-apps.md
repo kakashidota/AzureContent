@@ -1,8 +1,8 @@
-# Nano Missions: Logic Apps
+# Missions: Logic Apps
 
 Part of the **Azureverse** learning path – a universe of bite-sized Azure knowledge.
 
-## Nano Mission 1: Monday Reminder Transmission – 09:00
+## Mission 1: Monday Reminder Transmission – 09:00
 
 ### Objective:
 
@@ -15,9 +15,9 @@ email—because in the Azureverse, even a simple reminder is mission-worthy.
 2. Action: Send an email via Outlook containing a reminder of your choice (or a cryptic message from your time-traveling
    self).
 
-[Watch the micro-walkthrough on YouTube.](https://youtu.be/XOjbjpVXDaE)
+[🎥 Watch the walkthrough on YouTube.](https://youtu.be/XOjbjpVXDaE)
 
-## Nano Mission 2: Chuck Norris API Beacon
+## Mission 2: Chuck Norris API Beacon
 
 ### Objective:
 
@@ -30,4 +30,4 @@ fact via email. Useless? Perhaps. Entertaining? Absolutely.
 2. Action: HTTP GET – call https://api.chucknorris.io/jokes/random.
 3. Action: Send an email via Outlook containing the joke payload. Congratulations, you've built a comedy beacon.
 
-[Watch the micro-walkthrough on YouTube.](https://youtu.be/r3TfMQ9YLO0)
+[🎥 Watch the walkthrough on YouTube.](https://youtu.be/r3TfMQ9YLO0)

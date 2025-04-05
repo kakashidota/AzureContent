@@ -30,5 +30,4 @@ and scale it — without needing to touch a Virtual Machine or mess with an Oper
 
 Next up:
 
-- [Nano Mission – Deploy from VS Code](02-nano-mission-deploy-from-vscode.md)
-- [Micro Walkthrough - Publish Demo](https://www.youtube.com/watch?v=example)
+- [📄 Mission – Deploy from VS Code](02-mission-deploy-from-vscode)
