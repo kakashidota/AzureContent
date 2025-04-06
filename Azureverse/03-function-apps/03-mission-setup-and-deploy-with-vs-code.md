@@ -26,5 +26,5 @@ Set up the Azure Functions CLI tools, create a function project, and deploy usin
 
 Next up:
 
-- [🎥 Mission 03: Setup & Deploy with VS Code](https://youtu.be/0pIChjWsIJo)
+- [🎥 Mission 03: Setup & Deploy with VS Code](https://youtu.be/i_d9maPOrjk)
 - [📄 Mission 04: Setup & Deploy with Rider](04-mission-setup-and-deploy-with-rider.md)

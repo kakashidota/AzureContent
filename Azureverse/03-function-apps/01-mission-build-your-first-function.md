@@ -23,5 +23,5 @@ tactical tips for code quality and local testing.
 
 Next up:
 
-- [🎥 Mission 01: Build Your First Function (Visual Studio)](https://youtu.be/0pIChjWsIJo)
+- [🎥 Mission 01: Build Your First Function (Visual Studio)](https://youtu.be/eV_vAl3R9gM)
 - [📄 Mission 02: Deploy via Visual Studio](02-mission-deploy-via-visual-studio.md)

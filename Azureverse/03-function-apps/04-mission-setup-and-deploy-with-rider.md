@@ -24,4 +24,4 @@ Cross-platform? Mac or Linux? This one’s for you. Create and deploy Azure Func
 
 Next up:
 
-- [🎥 Mission 04: Setup & Deploy with Rider](https://youtu.be/0pIChjWsIJo)
+- [🎥 Mission 04: Setup & Deploy with Rider](https://youtu.be/VRj4kUvwXfw)

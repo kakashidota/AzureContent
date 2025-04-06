@@ -24,5 +24,5 @@ Take the local function and launch it into the cloud.
 
 Next up:
 
-- [🎥 Mission 02: Deploy via Visual Studio](https://youtu.be/0pIChjWsIJo)
+- [🎥 Mission 02: Deploy via Visual Studio](https://youtu.be/uudW5IfQGKw)
 - [📄 Mission 03: Setup & Deploy with VS Code](03-mission-setup-and-deploy-with-vs-code.md)
