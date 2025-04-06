@@ -1,4 +1,4 @@
-# Briefing: What Is Azure?
+# Briefing 01: What Is Azure?
 
 Welcome to the **Azureverse** — a galaxy of developer tools, services, and futuristic cloud stuff that sounds
 intimidating until you realize you can automate half your life with it.
@@ -31,5 +31,5 @@ It's like having a futuristic toolkit that you don't have to build yourself. Nea
 
 Next up:
 
-- [📄 Mission: Create Free Account](02-mission-create-free-account)
-- [🎥 Briefing: Portal Recon](https://youtu.be/o-6esql_HeA)
+- [📄 Mission 01: Create Free Account](01-mission-create-free-account.md)
+- [🎥 Briefing 01: Portal Recon](https://youtu.be/o-6esql_HeA)
