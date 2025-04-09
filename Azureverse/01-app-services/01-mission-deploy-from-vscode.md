@@ -1,4 +1,4 @@
-# Mission: Deploy a Web App from VS Code
+# Mission 01: Deploy a Web App from VS Code
 
 Welcome back, Agent of the Azureverse. You've written the code — now it's time to launch it into the cloud. In this
 Mission, you'll deploy a basic web app directly from Visual Studio Code to Azure App Service.
@@ -10,7 +10,7 @@ without the horror of broken CI/CD pipelines.
 
 ## 🧪 Prerequisites
 
-- An Azure account (complete [this mission](../00-fundamentals/02-mission-create-free-account) if you haven't)
+- An Azure account (complete [this mission](../00-fundamentals/01-mission-create-free-account) if you haven't)
 - [Visual Studio Code](https://code.visualstudio.com/) installed
 - [Azure Tools extension pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack)
 
