@@ -13,7 +13,7 @@ This guide walks you through creating a **Kali Linux virtual machine on Microsof
 2. Click **"Create a resource"** → Search for **"Kali Linux"**
 3. Choose the **Kali Linux** image (usually provided by "Offensive Security")
 4. Select a VM size (e.g., `Standard_B2s` works well)
-5. Create or select an SSH key pair
+5. Create admin account with username and password
 6. Open the following ports in "Networking":
    - **22** (SSH)
    - **3389** (RDP)
@@ -26,7 +26,7 @@ This guide walks you through creating a **Kali Linux virtual machine on Microsof
 From your terminal (replace `your_ip` with the VM's public IP):
 
 ```bash
-ssh -i ~/.ssh/your-key.pem kali@your_ip
+ssh username@your_ip
 ```
 
 ---
@@ -61,23 +61,15 @@ sudo systemctl start xrdp
 
 ---
 
-### 6. Set a Password for the kali User
 
-```bash
-sudo passwd kali
-```
 
-This is required to log in via RDP.
-
----
-
-### 7. Connect via RDP
+### 6. Connect via RDP
 
 Use the **Windows Remote Desktop Client** (or any RDP client):
 
 - IP: your VM’s public IP
-- Username: `kali`
-- Password: the one you just set
+- Username: The one you set in azure portal
+- Password: The one you set in azure portal
 
 ---
 
