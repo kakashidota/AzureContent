@@ -7,6 +7,9 @@ This guide walks you through creating a **Kali Linux virtual machine on Microsof
 
 ## 🚀 Step-by-Step Instructions
 
+Follow the video:
+https://youtu.be/HgHyH1VsuTY
+
 ### 1. Create a Kali Linux VM on Azure
 
 1. Go to [Azure Portal](https://portal.azure.com)
