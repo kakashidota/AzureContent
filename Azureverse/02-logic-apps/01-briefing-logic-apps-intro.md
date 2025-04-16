@@ -1,4 +1,4 @@
-# Cloud Bit: What Are Logic Apps?
+# Briefing 01: What Are Logic Apps?
 
 Welcome to the **Azureverse** — where automation is the only intelligent lifeform.
 
@@ -36,5 +36,5 @@ and that's as close to wizardry as it gets in the cloud.
 
 Next up:
 
-- [Logic Apps – Micro Walkthrough: What are Logic Apps](https://youtu.be/o-6esql_HeA)
-- [Logic Apps - Nano Missions](02-nano-missions-logic-apps)
+- [🎥 Briefing 01: What are Logic Apps](https://youtu.be/o-6esql_HeA)
+- [📄 Mission 01: Monday Reminder Transmission](01-mission-monday-reminder-transmission.md)

@@ -1,4 +1,4 @@
-# Nano Mission: Create a Free Azure Account
+# Mission 01: Create a Free Azure Account
 
 Welcome to your first official mission in the **Azureverse**. Before you can automate, deploy, or accidentally spin up a
 Virtual Machine that costs way too much — you'll need an Azure account.

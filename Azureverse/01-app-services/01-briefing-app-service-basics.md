@@ -1,4 +1,4 @@
-# Cloud Bit: What Is App Service?
+# Briefing 01: What Is App Service?
 
 Welcome back to the **Azureverse**, where deploying your app doesn't require arcane rituals or dealing with
 unpredictable hardware. In this Cloud Bit, we're talking about **App Service** — Azure's platform for hosting web apps,
@@ -30,5 +30,4 @@ and scale it — without needing to touch a Virtual Machine or mess with an Oper
 
 Next up:
 
-- [Nano Mission – Deploy from VS Code](02-nano-mission-deploy-from-vscode.md)
-- [Micro Walkthrough - Publish Demo](https://www.youtube.com/watch?v=example)
+- [📄 Mission 01: Deploy from VS Code](01-mission-deploy-from-vscode)
