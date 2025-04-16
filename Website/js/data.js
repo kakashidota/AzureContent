@@ -6,7 +6,7 @@ const coursesData = [
         id: 'devops1',
         title: 'AZ-400 DevOps Certification',
         category: 'devops',
-        description: 'Complete guide to achieving the Microsoft Azure DevOps certification with hands-on examples and practice tests.',
+        description: 'Complete potatis guide to achieving the Microsoft Azure DevOps certification with hands-on examples and practice tests.',
         thumbnail: 'assets/devops-cert.jpg',
         lessons: 15,
         duration: '10h 45m',
