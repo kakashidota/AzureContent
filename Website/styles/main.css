@@ -1015,4 +1015,179 @@ footer {
 
 .dark-mode .resources-list a.disabled {
     color: #666;
+}
+
+/* Discord page specific styles */
+.discord-hero {
+    background: linear-gradient(to right, #5865F2, #2b5797);
+}
+
+.discord-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.discord-about {
+    padding: 4rem 2rem;
+    background-color: var(--bg-color);
+    transition: var(--transition);
+}
+
+.discord-about h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: var(--secondary-color);
+}
+
+.discord-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.discord-feature-item {
+    background-color: var(--card-bg);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    text-align: center;
+    transition: var(--transition);
+}
+
+.discord-feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #5865F2;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 1.8rem;
+}
+
+.discord-feature-item h3 {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.discord-welcome {
+    padding: 4rem 2rem;
+    background-color: var(--light-color);
+}
+
+.welcome-card {
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.welcome-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: #5865F2;
+    color: white;
+    padding: 1.5rem;
+}
+
+.welcome-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+}
+
+.welcome-content {
+    padding: 2rem;
+}
+
+.welcome-content p {
+    margin-bottom: 1rem;
+}
+
+.welcome-steps, .welcome-features {
+    background-color: rgba(88, 101, 242, 0.1);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    margin: 1.5rem 0;
+}
+
+.welcome-steps h4, .welcome-features h4 {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.welcome-steps ul, .welcome-features ul {
+    padding-left: 1.5rem;
+}
+
+.welcome-steps li, .welcome-features li {
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 0.5rem;
+}
+
+.welcome-steps li::before, .welcome-features li::before {
+    content: '•';
+    position: absolute;
+    left: -1rem;
+    color: #5865F2;
+}
+
+.welcome-closing {
+    font-weight: 600;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.welcome-signature {
+    text-align: right;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.welcome-cta {
+    padding: 2rem;
+    text-align: center;
+    background-color: rgba(88, 101, 242, 0.1);
+}
+
+/* Dark mode styles for Discord page */
+.dark-mode .discord-about {
+    background-color: var(--light-color);
+}
+
+.dark-mode .discord-about h2 {
+    color: var(--primary-color);
+}
+
+.dark-mode .welcome-steps, 
+.dark-mode .welcome-features {
+    background-color: rgba(88, 101, 242, 0.05);
+}
+
+@media (max-width: 768px) {
+    .discord-features {
+        grid-template-columns: 1fr;
+    }
+    
+    .welcome-header {
+        flex-direction: column;
+        text-align: center;
+    }
 } 
