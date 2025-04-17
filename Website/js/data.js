@@ -202,25 +202,45 @@ const coursesData = [
         description: 'Master RPA development with UiPath through step-by-step tutorials and real-world projects.',
         thumbnail: 'assets/uipath-rpa.jpg',
         lessons: 20,
-        duration: '15h 20m',
+        duration: '1h 30m',
         level: 'Intermediate',
-        playlistUrl: 'https://www.youtube.com/watch?v=5LEfQ04gjo0&list=PLQ10yv3WDdnYxsbav5mc9Wp8LF_l2jsfJ',
+        playlistUrl: 'https://www.youtube.com/playlist?list=PLQ10yv3WDdnYxsbav5mc9Wp8LF_l2jsfJ',
         videos: [
             {
-                title: 'UiPath tutorial | How to create a new queue item in Orchestrator',
-                url: 'https://www.youtube.com/watch?v=CJQX7tGgVZo',
-                duration: '8:09'
+                title: 'RPA Beginner Course 2025 Zero To Hero - UiPath Installation Part 1',
+                url: 'https://youtu.be/5LEfQ04gjo0?si=XlhegKLRaI7VssQt',
+                duration: '11:58'
             },
             {
-                title: 'UiPath tutorial | How to handle download folders using UiPath',
-                url: 'https://www.youtube.com/watch?v=f95wfMcd-KA',
-                duration: '10:56'
+                title: 'Create Your First Robot with UiPath - RPA Beginner Course 2024 Zero To Hero Part 2',
+                url: 'https://youtu.be/necHrr4MCho?si=vsY00Tk-ab2MUPky',
+                duration: '13:03'
             },
             {
-                title: 'UiPath tutorial | Transfer data from Excel to Web Application (Dynamic selector & item)',
-                url: 'https://www.youtube.com/watch?v=qhbe_T0eWus',
-                duration: '16:41'
-            }
+                title: 'Getting To Know UiPath Editor RPA Beginner Course 2024 Zero To Hero - Part 3',
+                url: 'https://youtu.be/nGp4AdPA4F8?si=dnP3f7DaMryJmXmT',
+                duration: '07:40'
+            },
+            {
+                title: 'UiPath Project Structures Fundamentals - RPA Zero To Hero 2024 Part 4',
+                url: 'https://youtu.be/QZXgPLE6SSY?si=Zb1MEX4CoFJmpduc',
+                duration: '12:15'
+            },
+            {
+                title: 'How To Send Email and Create ForEach With UiPath and Outlook - RPA Zero To Hero 2024 Part 5',
+                url: 'https://youtu.be/YQuXSwo3nbU?si=dRtcLJTiHGQcMD01',
+                duration: '25:08'
+            },
+            {
+                title: 'Webscraping with UiPath and Excel - RPA Zero To Hero Part 6',
+                url: 'https://youtu.be/XkA0AEV8vA4?si=E0LV4zNruv9nXV2R',
+                duration: '12:08'
+            },
+            {
+                title: 'Webscraping From Excel with UiPath - RPA Zero To Hero 2024 Part 7',
+                url: 'https://youtu.be/ZCLaihSgHT8?si=bu3Ax7o-u957GJv7',
+                duration: '15:40'
+            },
             // Additional videos will be populated from the YouTube API in a real implementation
         ]
     },
