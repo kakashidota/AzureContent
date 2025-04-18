@@ -5,9 +5,9 @@ const coursesData = [
     {
         id: 'devops1',
         title: 'Azure DevOps',
-        category: 'devops',
+        category: 'DevOps',
         description: 'A complete beginner-friendly playlist to get you started with Azure DevOps. Covers Boards, Repos, Pipelines, Test Plans, and Artifacts with clear, step-by-step tutorials.',
-        thumbnail: 'assets/azuredevops.png',
+        thumbnail: 'assets/devopspotato.png',
         lessons: 19,
         duration: '2h 10m',
         level: 'Advanced',
@@ -114,7 +114,7 @@ const coursesData = [
     {
         id: 'azure1',
         title: 'Azure Fundamentals',
-        category: 'azure',
+        category: 'Cloud',
         description: '​The "Azure" playlist offers a concise introduction to Microsoft Azures core services and functionalities. Ideal for beginners, it covers topics like cloud fundamentals, resource management, and deployment strategies, providing a solid foundation for navigating Azures ecosystem.',
         thumbnail: 'assets/AzurePotato.png',
         lessons: 14,
@@ -200,7 +200,7 @@ const coursesData = [
         title: 'UiPath RPA Development',
         category: 'rpa',
         description: 'Master RPA development with UiPath through step-by-step tutorials and real-world projects.',
-        thumbnail: 'assets/uipath-rpa.jpg',
+        thumbnail: 'assets/happypotato.png',
         lessons: 20,
         duration: '1h 30m',
         level: 'Intermediate',
@@ -246,58 +246,67 @@ const coursesData = [
     },
     {
         id: 'security1',
-        title: 'Cybersecurity Fundamentals',
-        category: 'security',
-        description: 'Learn essential cybersecurity concepts and practices to protect systems and data from threats.',
-        thumbnail: 'assets/cybersecurity.jpg',
+        title: 'Azure functions',
+        category: 'Serverless Integration',
+        description: '​The Azure Functions playlist offers a beginner-friendly introduction to building serverless applications with Azure Functions. It covers essential topics like triggers, bindings, and deployment, providing a solid foundation for developers new to Azures serverless offerings',
+        thumbnail: 'assets/functionpotato.png',
         lessons: 18,
-        duration: '12h 15m',
+        duration: '1h 10m',
         level: 'Beginner',
-        playlistUrl: 'https://www.youtube.com/playlist?list=PLD7svyKaquTktM3lQRaGi0UwjiZFu7AsY',
+        playlistUrl: 'https://www.youtube.com/playlist?list=PLQ10yv3WDdnZHPUfXce3HlJPsUI8-5dM6',
         videos: [
             {
-                title: 'How to deploy a Windows virtual machine in Oracle Cloud [Full tutorial]',
-                url: 'https://www.youtube.com/watch?v=GcJkuvzPeXg',
-                duration: '10:49'
+                title: 'Azure Functions – What They Are, Setup & Portal Demo (Briefing 01)',
+                url: 'https://youtu.be/0pIChjWsIJo?si=fyh78BBSzLh35Jt0',
+                duration: '12:'
             },
             {
-                title: 'Microsoft Sentinel - How to create a virtual machine in Azure and connect it to Sentinel',
-                url: 'https://www.youtube.com/watch?v=P3K_bhx6hVw',
+                title: 'Build Azure Functions in Visual Studio (Mission 01)',
+                url: 'https://youtu.be/eV_vAl3R9gM?si=tBZpxvCasSKyrY8J',
                 duration: '10:08'
             },
             {
-                title: 'Create Honeynet and SOC in Azure | Setting up the environment and virtual machines',
-                url: 'https://www.youtube.com/watch?v=Xs8F-StALF4',
-                duration: '13:57'
+                title: 'Deploy Azure Functions from Visual Studio (Mission 02)',
+                url: 'https://youtu.be/uudW5IfQGKw?si=IyzfACNaMUuUj2X5',
+                duration: '03:31'
+            },
+            {
+                title: 'Setup & Deploy Azure Functions with VS Code (Mission 03)',
+                url: 'https://youtu.be/i_d9maPOrjk?si=cEE6kal59SOjY_do',
+                duration: '13:13'
+            }, {
+                title: 'Setup & Deploy Azure Functions with Rider (Mission 04)',
+                url: 'https://youtu.be/VRj4kUvwXfw?si=eFCgZhIuazX6Y45j',
+                duration: '13:21'
             }
             // Additional videos will be populated from the YouTube API in a real implementation
         ]
     },
     {
         id: 'dotnet1',
-        title: '.NET Core Development',
-        category: 'dotnet',
-        description: 'Comprehensive course on building modern applications with .NET Core and C#.',
-        thumbnail: 'assets/dotnet-core.jpg',
-        lessons: 25,
-        duration: '18h 30m',
-        level: 'Intermediate',
-        playlistUrl: 'https://www.youtube.com/playlist?list=PLD7svyKaquTmkOSBZ8dj39NwdZn3SnQOO',
+        title: 'LogicApps',
+        category: 'Serverless Integration',
+        description: 'Logic App fundamentals',
+        thumbnail: 'assets/LogicAppPotato.png',
+        lessons: 3,
+        duration: '30m',
+        level: 'Beginner',
+        playlistUrl: 'https://www.youtube.com/playlist?list=PLQ10yv3WDdnbDyz3QF4LlZFrxzXFt5cNa',
         videos: [
             {
-                title: 'SonarQube code analysis using Azure DevOps CI CD',
-                url: 'https://www.youtube.com/watch?v=c4nYhGU7s-k',
-                duration: '19:53'
+                title: 'Azure Logic Apps – What They Are & Why They Matter (Briefing 01)',
+                url: 'https://youtu.be/gw_5KNpZMCk?si=pOz4WBU6t9MJsvH-',
+                duration: '06:03'
             },
             {
-                title: 'CI CD Pipeline for ASP.NET Core Web API using Azure DevOps',
-                url: 'https://www.youtube.com/watch?v=7YMWthE6RTY',
+                title: 'Azure Logic Apps – Automate Email Reminders (Mission 01: Monday Transmission)',
+                url: 'https://youtu.be/XOjbjpVXDaE?si=K-kDi5c9pdJDxQVK',
                 duration: '16:19'
             },
             {
-                title: 'Build ASP.NET Core Web API and deploy it in Azure using GitHub Actions',
-                url: 'https://www.youtube.com/watch?v=cE33BSCGN3E',
-                duration: '13:29'
+                title: 'Azure Logic Apps – Call Chuck Norris API (Mission 02: Comedy Beacon)',
+                url: 'https://youtu.be/r3TfMQ9YLO0?si=9s-54OIUMmMol0SG',
+                duration: '04:41'
             }
             // Additional videos will be populated from the YouTube API in a real implementation
         ]
