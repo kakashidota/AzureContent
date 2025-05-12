@@ -1,0 +1,23 @@
+Circutits
+
+window.addEventListener("beforeunload", () => {
+    DotNet.invokeMethodAsync('AlmedalGamestoreFE', 'SaveCartOnUnload');
+});
+
+
+In Pages/_Host.cshtml, before </body>, add:
+<script src="js/cart.js"></script>
+
+
+
+public class XXX
+{
+    public List<CartItemDto> cartDetails = new(); // Your existing data
+
+    [JSInvokable("SaveCartOnUnload")]
+    public static async Task SaveCartOnUnload()
+    {
+        // Add logic here to save to your API
+        Console.WriteLine("JS triggered SaveCartOnUnload");
+    }
+}
